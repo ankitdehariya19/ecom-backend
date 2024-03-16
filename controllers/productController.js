@@ -1,4 +1,4 @@
-// controllers/productController.js
+
 const Product = require('../models/product');
 
 const productController = {
@@ -7,7 +7,7 @@ const productController = {
       const products = await Product.find();
       res.status(200).json(products);
     } catch (error) {
-      next(error); // Pass error to the error handling middleware
+      next(error); 
     }
   },
 
